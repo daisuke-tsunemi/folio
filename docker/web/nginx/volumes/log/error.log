@@ -1,0 +1,7 @@
+2024/01/23 06:10:59 [error] 12#12: *1 directory index of "/var/www/html/public/" is forbidden, client: 192.168.65.1, server: _, request: "GET / HTTP/1.1", host: "localhost:8100"
+2024/01/23 06:14:39 [error] 12#12: *3 directory index of "/var/www/html/public/" is forbidden, client: 192.168.65.1, server: _, request: "GET / HTTP/1.1", host: "localhost:8100"
+2024/01/23 06:15:25 [error] 12#12: *5 directory index of "/var/www/html/public/" is forbidden, client: 192.168.65.1, server: _, request: "GET / HTTP/1.1", host: "localhost:8100"
+2024/01/23 06:17:19 [error] 12#12: *1 directory index of "/var/www/html/public/" is forbidden, client: 192.168.65.1, server: _, request: "GET / HTTP/1.1", host: "localhost:8100"
+2024/01/23 07:07:07 [error] 12#12: *1 directory index of "/var/www/html/public/" is forbidden, client: 192.168.65.1, server: _, request: "GET / HTTP/1.1", host: "localhost:8100"
+2024/01/23 07:07:10 [error] 12#12: *2 directory index of "/var/www/html/public/" is forbidden, client: 192.168.65.1, server: _, request: "GET / HTTP/1.1", host: "localhost:8100"
+2024/01/23 08:25:07 [error] 12#12: *4 directory index of "/var/www/html/public/" is forbidden, client: 192.168.65.1, server: _, request: "GET / HTTP/1.1", host: "localhost:8100"

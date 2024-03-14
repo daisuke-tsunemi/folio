@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/welcome', function () {
     return view('welcome');
 });
+
+Route::view('/', 'index')->name('home');
+Route::view('/works', 'works.index')->name('works');
