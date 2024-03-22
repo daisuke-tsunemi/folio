@@ -19,6 +19,7 @@ html {
   font-family: var(--font-family);
   font-feature-settings: "palt";
   background-color: var(--bg);
+  scroll-behavior: auto;
   /* Windows (全バージョン)のみ */
   &.win {
     font-feature-settings: normal;
@@ -59,7 +60,7 @@ p {
   }
 }
 a {  
-  color:var(--base);
+  // color:var(--base);
   word-break: break-word;
   font-weight: 400;
   font-size: 14px;

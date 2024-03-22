@@ -37,7 +37,7 @@
             <a href="{{ route('home') }}"><i class="fa-solid fa-people-group"></i></a>
             <a href="{{ route('home') }}"><i class="fa-solid fa-gears"></i></a>
         </footer>
-        <script  src="{{ asset('js/script.js') }}"></script>
+        <script  src="{{ asset('js/scriptDefault.js') }}"></script>
 
     </body>
 </html>

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" class="dark:bg-gray-900">
   @include('web.layouts._head')
   <body class="l-body @yield('page_class')" id="top">
+    <div id="stalker"></div>
     @include('web.components._svg')
     @include('web.components._loading')
     <div class="l-base" id="l-base">

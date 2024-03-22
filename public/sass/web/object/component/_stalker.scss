@@ -1,0 +1,21 @@
+#stalker {
+    pointer-events: none;
+    position: fixed;
+    top: -0.5rem;
+    left: -0.5rem;
+    width: 1rem;  
+    height: 1rem;
+    background: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    transition: transform 0.2s, top, 0.5s, left 0.5s, width .5s, height .5s, background-color .5s;
+    transition-timing-function: ease-out;
+    z-index: 999;
+    &.hov_{
+      top: -2rem;
+      left: -2rem;
+      width: 4rem;
+      height: 4rem;
+      transition: .5s;
+      background: rgba(255, 0, 0, 0.4);
+    }
+}
