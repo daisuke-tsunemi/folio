@@ -1,0 +1,28 @@
+@use "../foundation/breakpoints" as *;
+/* ——————————————————————————————————————————————————————————————
+padding
+—————————————————————————————————————————————————————————————— */
+.u-p0 {
+  padding: 0;
+}
+// padding
+@for $i from 1 through 10 {
+  $num: $i * 8;
+  .u-pd#{$num} {
+    padding: #{calc($i * 8)}px;
+  }
+}
+// padding-block-start
+@for $i from 1 through 10 {
+  $num: $i * 8;
+  .u-pdt#{$num} {
+    padding-block-start: #{calc($i * 8)}px;
+  }
+}
+// padding-block-end
+@for $i from 1 through 10 {
+  $num: $i * 8;
+  .u-pdb#{$num} {
+    padding-block-end: #{calc($i * 8)}px;
+  }
+}

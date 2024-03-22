@@ -1,0 +1,47 @@
+:root {
+ // カラー
+ --hue: 220;
+ --primary: hsl(var(--hue), 100%, 31%);
+ --primary-dark: hsl(var(--hue), 100%, 19%);
+ --primary-accent: hsl(var(--hue), 100%, 46%);
+ --primary-light: hsl(var(--hue), 63%, 58%);
+ --primary-pale: hsl(var(--hue), 45%, 90%);
+ --primary-bg: hsl(var(--hue), 39%, 93%);
+ --primary-bg-light: hsl(204, 40%, 98%);
+ --base: #222;
+ --border: #c6c7c8;
+ --border-color: hsl(270, 20%, 62%);
+ --border-light: hsl(270, 33%, 87%);
+ --bg: #EDF1F3;
+ --bg-light: hsl(var(--hue), 4%, 96%);
+ --bg-dark: hsl(var(--hue), 4%, 80%);
+ --bg-theme-light: hsl(var(--hue), 24%, 96%);
+ --bg-theme-dark: hsl(180, 6%, 14%);
+ --txt: #363636;
+ --txt-weak: #666;
+ --txt-light: #bbb;
+ --txt-strong: #000;
+ --txt-color: #466683;
+ --txt-link: hsl(279, 29%, 37%);
+ --ok: #38ad41;
+ --caution: #EA00AA;
+ --alert: #de2b2b;
+ --second: #FFD600;
+ --second-light: #EBFF00;
+ --second-dark: #BE9F00;
+
+ --valid: hsl(173, 88%, 42%);
+ --invalid: hsl(345, 87%, 64%);
+ --invalid-light: hsl(344, 100%, 95%);
+ --invalid-dark: hsl(345, 80%, 48%);
+
+ // font-family
+ --font-family: "Roboto", "Noto Sans JP", "Helvetica Neue", "Helvetica",
+   "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo",
+   sans-serif;
+  --header:50px;
+  --footer:50px;
+}
+$colors: primary, primary-dark, primary-light, primary-bg, primary-bg-light,
+ border, border-light, bg, bg-light, bg-dark, txt, txt-weak, txt-light,
+ txt-strong, valid, invalid;

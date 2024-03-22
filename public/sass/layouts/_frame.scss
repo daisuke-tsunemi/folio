@@ -1,0 +1,41 @@
+@use "../foundation/var" as *;
+@use "../foundation/breakpoints" as *;
+%l-frame,.l-frame{
+  flex: auto;
+}
+.p-frame{
+  flex: auto;
+  &__narrow{
+    @extend %l-frame;
+    max-width:800px;
+  }
+  &__head{
+    display: flex;
+    align-items:center;
+    flex: auto;
+    padding: 1rem 4rem 1rem 1rem;
+    @include breakpoints (lg){
+      padding: 1rem 1.5rem;
+    }
+  }
+  &__title{
+    border-bottom: 1px solid var(--border);
+    padding:0.5rem 1rem;
+    min-height: 60px;
+    @include breakpoints (lg){
+      padding: 1rem 1.5rem;
+    }
+  }
+  &__body{
+    padding:0 1rem;
+    @include breakpoints (lg){
+      padding:0 1.5rem;
+    }
+  }
+  &__foot{
+    padding:1.5rem 1rem 0;
+    @include breakpoints (lg){
+      padding:2rem 1.5rem 0;
+    }
+  }
+}

@@ -1,0 +1,96 @@
+@use "../foundation/breakpoints" as *;
+/* ! ==================================================
+- ヘッダー
+================================================== */
+header{
+  position:sticky;
+  top:0;
+  width: 100%;
+  z-index: 3;
+	background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, .1);
+  grid-area:header;
+	// height: var(--header);
+	display:flex;
+	align-items:center;
+	justify-content:center;
+  .l-header--container{
+    display:flex;
+    align-items:center;
+    width: 100%;
+		padding: 1rem;
+		@include breakpoints (md){
+			padding-inline: 1.5rem;
+		}
+		.c-txt__min{
+			max-width: 200px;
+		}
+		.logo{
+			align-items:center;
+		}
+  }
+}
+.l-header {
+	&--action{
+		margin-inline-start: auto;
+		display:flex;
+		gap: .25rem;
+		align-items:center;
+	}
+	.c-logoArea{
+		display:block;
+		&:hover{
+			opacity: .7;
+		}
+		.c-logo{
+			height:1rem;
+			display:block;
+			@include breakpoints (sm){
+				height:1.5rem;
+			}
+		}
+	}
+}
+// 通常のハンバーガーメニュー
+.nav_toggle{
+	height:2.5rem; 
+	width:2.5rem;
+	border-radius: 4px;
+	display: none;
+	border: #000 1px solid;
+	background-color:rgba(255,255,255,.2);
+	position:relative;
+	transition: all 0.2s ease;
+	z-index: 100;
+	cursor: pointer;
+	span{
+		height:1px; width:30px;
+		background-color: #000;
+		display: block;
+		position:absolute;
+		top:15px;
+		left:50%;
+		transition: all 0.2s ease;
+		transform:translate(-50%,0);
+		+span{
+			top:22px;
+		}
+		&.close{
+			top:50%;
+			transform:translate(-50%,-50%) rotate(45deg);
+			+span{
+				transform:translate(-50%,-50%) rotate(-45deg);
+			}
+		}
+	}
+	@include breakpoints (sm){
+		display: block;
+			z-index: 99;
+		&:hover{
+			background-color: #eee;
+			span{
+				width: 20px;
+			}
+		}
+	}
+}

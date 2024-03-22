@@ -1,0 +1,27 @@
+@use "../foundation/breakpoints" as *;
+@use "../foundation/var" as *;
+/* ! --------------------------------------------------
+- コンテナ
+-------------------------------------------------- */
+%container{
+  width: 100%;
+  min-width:350px;
+}
+.l-container {
+  max-width: 1280px;
+  margin:0 auto;
+  // 500px~1400px
+  @extend %container;
+  $i: 5;
+  @while $i <= 14 {
+    &__#{$i}00 {
+      @extend %container;
+      max-width: (100px * $i);
+    }
+    $i: $i + 1;
+  }
+  &__full {
+    @extend %container;
+    max-width: inherit;
+  }
+}

@@ -1,0 +1,78 @@
+@use "../foundation/breakpoints" as *;
+/* ——————————————————————————————————————————————————————————————
+br
+—————————————————————————————————————————————————————————————— */
+/* 指定のワイド以上でON */
+.on{
+  display:block;
+  &xl3{
+    display:none;
+    @include breakpoints (xl3){
+      display:block;
+    }
+  }
+  &_xl2{
+    display:none;
+    @include breakpoints (xl2){
+      display:block;
+    }
+  }
+  &_xl{
+    display:none;
+    @include breakpoints (xl){
+      display:block;
+    }
+  }
+  &_lg{
+    display:none;
+    @include breakpoints (lg){
+      display:block;
+    }
+  }
+  &_md{
+    display:none;
+    @include breakpoints (md){
+      display:block;
+    }
+  }
+  &_sm{
+    display:none;
+    @include breakpoints (sm){
+      display:block;
+    }
+  }
+}
+ /* 指定のワイド以上でOFF */
+ .off{
+  display:none;
+  &xl3{
+    @include breakpoints (xl3){
+      display:none;
+    }
+  }
+  &_xl2{
+    @include breakpoints (xl2){
+      display:none;
+    }
+  }
+  &_xl{
+    @include breakpoints (xl){
+      display:none;
+    }
+  }
+  &_lg{
+    @include breakpoints (lg){
+      display:none;
+    }
+  }
+  &_md{
+    @include breakpoints (md){
+      display:none;
+    }
+  }
+  &_sm{
+    @include breakpoints (sm){
+      display:none;
+    }
+  }
+}

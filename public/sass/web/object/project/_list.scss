@@ -1,0 +1,78 @@
+@use "../../../foundation/breakpoints" as *;
+@use "../../../foundation/var" as *;
+/* ! ==================================================
+- リスト
+================================================== */
+.p-list {
+  >*{
+    +*{
+      margin-block-start: .5rem;
+      @include breakpoints (xl3){
+        margin-block-start: 1rem;
+      }
+    }
+  }
+}
+%p-list,.p-list {
+  *{
+    .label{
+      min-width:100px;
+      color: var(--txt-weak);
+    }
+  }
+  &__row{
+    @extend %p-list;
+    >*{
+      gap: .5rem;
+      @include breakpoints (md){
+        gap: 1rem;
+        display:flex;
+        flex-wrap:wrap;
+        align-items:center;
+        P+P{
+          margin: 0;
+        }
+      }
+      &.f-start{
+        align-items: flex-start;
+      }
+    }
+  }
+  &__wrap{
+    @extend %p-list;
+    display: flex;
+    flex-wrap:wrap;
+  }
+  &__border {
+    >*{
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      border-bottom:1px solid var(--border);
+      &:first-child{
+        padding-bottom: 1rem;
+      }
+      &:last-child{
+        padding-top: 1rem;
+        border: none;
+      }
+    }
+    &--narrow{
+      >*{
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        border-bottom:1px solid var(--border);
+        &:last-child{
+          border: none;
+        }
+      }
+    }
+  }
+}
+li,tr{
+  &[data-href]{
+    cursor: pointer;
+    &:hover{
+      background-color: var(--primary-pale);
+    }
+  }
+}

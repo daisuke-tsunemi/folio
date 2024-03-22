@@ -1,0 +1,92 @@
+@use "../foundation/var" as *;
+@use "../foundation/breakpoints" as *;
+
+/* ! ==================================================
+- html/body
+白銀比/ 1:1.414
+黄金比/ 1:1.618
+白金比/ 1:1.732
+================================================== */
+*{
+  box-sizing:border-box;
+  letter-spacing:.06em;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 1rem;
+  height: -weblit-fill-available;
+  display: block;
+  font-family: var(--font-family);
+  font-feature-settings: "palt";
+  background-color: var(--bg);
+  /* Windows (全バージョン)のみ */
+  &.win {
+    font-feature-settings: normal;
+  }
+}
+/* edgeのみ */
+@supports (-ms-ime-align: auto){
+  html {
+    font-feature-settings: normal;
+  }
+}
+body {
+  min-height: 100vh;
+  min-width:320px;
+  min-height: -weblit-fill-available;
+  font-size: 14px;
+  width: 100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  position:relative;
+  line-height: 1.4;
+}
+/* ! --------------------------------------------------
+- text
+-------------------------------------------------- */
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.34em;
+  text-align: left;
+  word-break: break-word;
+  &.weak {
+    color: var(--txt-weak);
+  }
+  &.light {
+    color: var(--txt-light);
+  }
+}
+a {  
+  color:var(--base);
+  word-break: break-word;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.34em;
+  text-decoration: none;
+  cursor: pointer;
+  &[target="_blanc"]{
+    display:flex;
+    align-items:center;
+    &::after{
+      content: '';
+      display: inline-block;
+      background:url(../images/shape/blanc.svg) no-repeat center;
+      background-size:cover;
+      height:10px;
+      width:10px;
+      margin-inline-start: .25rem;
+    }
+  }
+}
+strong{font-size:1.3em;}
+small{font-size:0.8em;}
+form {width: auto;}
+::selection {
+  color: var(--bg);
+  background-color:var(--primary);
+}
+button{
+  cursor: pointer;
+}

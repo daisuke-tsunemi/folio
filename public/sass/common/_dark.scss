@@ -1,0 +1,21 @@
+@use "../foundation/_var" as *;
+@use "../foundation/breakpoints" as *;
+// ダークモード
+html{
+  &[data-theme="dark"]{
+    background-color: var(--bg-theme-dark);
+    header{
+      background-color: rgba($color: #fff, $alpha: 0.2);
+      .theme-dark{
+        background-color: var(--bg-light);
+      }
+    }
+  }
+  &[data-theme="light"]{
+    header{
+      .theme-light{
+        background-color: var(--bg-light);
+      }
+    }
+  }
+}

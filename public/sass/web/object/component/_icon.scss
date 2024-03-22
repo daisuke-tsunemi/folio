@@ -1,0 +1,23 @@
+/* ! --------------------------------------------------
+- アイコン
+-------------------------------------------------- */
+svg{
+	color:var(--base);
+	width: 1em;
+	height: auto;
+	aspect-ratio: 1/1;
+	&.icon{
+		border-radius:4px;
+		&__w12{width: 12px;}
+		&__w16{width: 16px;}
+		&__w20{width: 20px;}
+		&__w24{width: 24px;}
+		&__w32{width: 32px;}
+		&__w40{width: 40px;}
+		&__w48{width: 48px;}
+		&__w56{width: 56px;}
+		&__w64{width: 64px;}
+		&__w72{width: 72px;}
+		&__circle{border-radius:50% !important;}
+	}
+}

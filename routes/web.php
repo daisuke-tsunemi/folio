@@ -17,5 +17,5 @@ Route::get('/welcome', function () {
     return view('welcome');
 });
 
-Route::view('/', 'index')->name('home');
-Route::view('/works', 'works.index')->name('works');
+Route::view('/', 'web.index')->name('home');
+Route::view('/works', 'web.works.index')->name('works');

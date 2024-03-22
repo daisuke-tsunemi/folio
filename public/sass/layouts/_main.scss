@@ -1,0 +1,13 @@
+@use "../foundation/breakpoints" as *;
+main{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  flex:auto;
+  min-height: calc(100vh - var(--header) - var(--footer));
+  // -webkit-animation: fadeIn 2s ease 0s 1 normal;
+  // animation: fadeIn 2s ease 0s 1 normal;
+  &Page{
+    padding-block-start: 3rem;
+  }
+}
