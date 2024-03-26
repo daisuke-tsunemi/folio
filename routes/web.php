@@ -19,3 +19,4 @@ Route::get('/welcome', function () {
 
 Route::view('/', 'web.index')->name('home');
 Route::view('/works', 'web.works.index')->name('works');
+Route::view('/about', 'web.about.index')->name('about');

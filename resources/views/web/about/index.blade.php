@@ -1,11 +1,11 @@
 @extends('web.layouts.app')
 @section('page_class', 'l-page')
 @section('description', 'descriptiondescriptiondescription')
-@section('title', 'Works')
+@section('title', 'About Us')
 @section('content')
     <section class="top">
         <img src="https://aryan-tayal.github.io/Mountains-Parallax/bg.jpg" id="bg" />
-        <h1 class="c-title--page">Works</h1>
+        <h1 class="c-title--page">@yield('title')</h1>
         <img src="https://aryan-tayal.github.io/Mountains-Parallax/man.png" id="man" />
         <img src="https://aryan-tayal.github.io/Mountains-Parallax/clouds_1.png" id="clouds_1" />
         <img src="https://aryan-tayal.github.io/Mountains-Parallax/clouds_2.png" id="clouds_2" />

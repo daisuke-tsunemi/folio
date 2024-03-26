@@ -1,0 +1,42 @@
+@use "../../../foundation/breakpoints" as *;
+.p-works{
+  height: 430vh; //__scrollのwidth +アルファ
+  &__sticky{
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    height: 98dvh;
+  }
+  &__scroll {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 400vw; //p-worksの高さに影響する
+    will-change: transform;
+    display: flex;
+    justify-content: space-between;
+    &--contents {
+      height: 100%;
+      width: 100vw;
+      padding: 1.5rem;
+      @include breakpoints (md){
+        padding: 2rem;
+      }
+      @include breakpoints (xl){
+        padding: 3rem;
+      }
+    }
+  }
+  .red {
+    background-color: #ff3d00;
+  }
+  .yellow {
+    background-color: #ffff00;
+  }
+  .green {
+    background-color: #05ff00;
+  }
+  .blue {
+    background-color: #2835f8;
+  }
+}
